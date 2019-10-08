@@ -1,0 +1,45 @@
+* {
+    border-radius: 5%;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: beige;
+}
+
+.form h1 {
+    margin-bottom: 30px;
+}
+
+.form li {
+    margin: 5px;
+    list-style-type: none;
+}
+
+.form input, .form select {
+    float: right;
+    margin-top: 0px;
+}
+
+.form select {
+    width: 172px;
+}
+
+.form button {
+    padding: 5px;
+    background-color: #003399;
+    color: #ffcc00;
+    border-style: none;
+    width: 128px;
+    height: 32px;
+    border-radius: 10px;
+}
+
+.form img {
+    width: 100px;
+    height: 100px;
+}

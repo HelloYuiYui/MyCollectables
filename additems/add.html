@@ -1,0 +1,29 @@
+<DOCTYPE html!>
+<html>
+    <head>
+        <title>Add new item</title>
+        <meta name="description" content="A website for people who collect things">
+        <meta name="author" content="EIA">
+        <meta lang="en">
+        <meta charset="iso-8859-1">
+        <link rel="stylesheet" href="/forms.css">
+        <script type="application/javascript" src="additem.js"></script>
+    </head>
+    <body>
+
+    <form class="form">
+        <h1>Add new items</h1>
+        <li><p>value: <input id="nvalue" type="number" step="any" autocomplete="off" maxlength="128" required></p></li><br>
+        <li><p>currency:<input id="ncurrency" autocomplete="off" maxlength="128" required></p></li><br>
+        <li><p>description: <input id="ndescr" autocomplete="off" maxlength="512"></p></li><br>
+        <li><p>year: <input id="nyear" type="number" autocomplete="off" maxlength="4" required></p></li><br>
+        <li><p>country:
+        <select onload="countries()" name="country" id="ncou">
+            <option value="United Kingdom">United Kingdom</option>
+            </select></p></li><br><br>
+        <button type="button" onclick="newItem()">Submit</button><br><br>
+        <p id="demo"></p>
+    </form>
+    </body>
+</html>
+</DOCTYPE>

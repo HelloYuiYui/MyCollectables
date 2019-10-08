@@ -1,0 +1,27 @@
+<DOCTYPE html!>
+<html>
+    <head>
+        <title>Log in</title>
+        <meta name="description" content="A website for people who collect things">
+        <meta name="author" content="EIA">
+        <meta lang="en">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/forms.css">
+        <script src="/user/user.js"></script>
+        <style>
+            select {margin: 3px;}
+        </style>
+        <script type="application/javascript" src="user.js"></script>
+    </head>
+    <body>
+    
+    <form class="form" style="width: 400px;">
+        <h1>Log in</h1>
+        <li><p>username: <input id="username" type="text" autocomplete="off" maxlength="50" required></p></li><br>
+        <li><p>password:<input id="pw" type="password" autocomplete="off" required></p></li><br>
+        <button type="button" onclick="auth()">Submit</button><br><br>
+        <p id="msg"></p>
+    </form>
+    </body>
+</html>
+</DOCTYPE>

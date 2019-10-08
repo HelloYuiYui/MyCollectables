@@ -1,0 +1,55 @@
+<DOCTYPE html!>
+<html>
+    <head>
+        <title>My Collectables</title>
+        <link rel="favicon" href="/assets/Eurologo.png">
+        <meta name="description" content="A website for people who collect things">
+        <meta name="author" content="EIA">
+        <meta lang="en">
+        <meta charset="utf-8">
+        <meta http-equiv="pragma" content="no-cache">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="jq.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="icon" href="assets/Logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|UnifrakturCook:700|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script id="script" src="client.js"></script>
+    </head>
+    
+    <body>
+        <div id="head">
+            <header>
+                <div id="blue"></div>
+                <div id="userinfo">
+                    <div id="pp_box"><img id="profile_photo" style="width: 50px; height: 50px;">
+                    </div>
+                    <p id="username"></p>
+                    <div class="dropdown">
+                        <button type="button" id="dropbtn"><i class="fa fa-bars"></i></button>
+                    <div class="dropdown-content">
+                        <a id="account" href="/account">Account</a>
+                        <a id="additem" href="additem/add.html">Add item</a>
+                        <a id="logout" onclick="logOut();" href="#">Log out</a>
+                        <a id="login" href="/login">Log in</a>
+                        <a id="signup" href="/signup">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="topline">
+                    <h1>Experimental shitsite.com</h1>
+                    <p>I do make experiments here. Sites main purpose is to keep record of my precious coins but I can add any feature if I want to  ( ͡° ͜ʖ ͡°)</p>
+                </div>
+            </header>
+        </div>
+        <main>
+            <section id="cards"></section>
+        </main>
+        <footer>
+            <hr>
+            <p>An experimental website for me to practice my basic web dev skills.</p>
+        </footer>
+    </body>
+    <script>if (localStorage.token !== undefined){auth(); getItems();} else {addSomeCoins();}</script>
+</html>
+</DOCTYPE>
