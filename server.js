@@ -13,7 +13,6 @@ var monthNames = ["January", "February", "March", "April", "May", "June", "July"
 dotenv.config();
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/'));
-//app.use(express.static(__dirname + "/user/"));
 
 var port = 3000; //process.env.port;
 var key = 'whats_a_key_lmao';
